@@ -1,30 +1,48 @@
+html {
+  background-color: black;
+    
+}
 body {
+  width: 1100px;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
   background-color: #9baa78;
   color: #333;
+  border: 1px solid #9baa78;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 1px 1px #ccc;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 40px 0 20px 0;
   text-shadow: 1px 1px #ccc;
+  text-align: center;
 }
 
-h2{
-  font-size: 20px;
+h2 {
+  font-size: 30px;
   margin: 40px 0 20px 0;
+  text-align: center;
 }
 
-a {
-  padding: 10px 12px;
-  background-color: #333;
-  color: #fff;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
   text-decoration: none;
   margin: 20px 10px;
   border-radius: 10px;
+  display: inline-block;
 }
 
-a:hover {
+.navbar a:hover {
   background-color: #fff;
   color: #333;
 }
@@ -48,26 +66,32 @@ th {
   text-shadow: 1px 1px #333;
 }
 
-img {
-  display: block;
-  margin: 40px auto;
-  border-radius: 10px;
-  box-shadow: 1px 1px #ccc;
+/* center images */
+div.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-p a {
-  font-size: 14px;
-  margin-top: 20px;
+img { 
   display: inline-block;
+  margin: 5px auto;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 1px 1px #ccc;
+
+}
+
+a.padded {
+  padding: 10px 12px;
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
+  text-decoration: none;
+  margin: 20px 10px;
   border-radius: 10px;
-  box-shadow: 1px 1px #ccc;
-  text-shadow: 1px 1px #333;
 }
 
-p a:hover {
+a.padded:hover {
   background-color: #fff;
   color: #333;
 }
